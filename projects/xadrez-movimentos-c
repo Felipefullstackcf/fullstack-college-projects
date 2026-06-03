@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main() {
+    // ==============================
+    // DECLARAÇÃO DAS VARIÁVEIS
+    // ==============================
+
+    // Quantidade de casas que cada peça irá se mover
+    int casasTorre = 5;
+    int casasBispo = 5;
+    int casasRainha = 8;
+
+    // Variáveis contadoras
+    int i;
+    int contadorBispo = 1;
+    int contadorRainha = 1;
+
+    // ==============================
+    // MOVIMENTO DA TORRE
+    // A Torre irá se mover 5 casas para a direita.
+    // Estrutura utilizada: for
+    // ==============================
+
+    printf("Movimento da Torre:\n");
+
+    for (i = 1; i <= casasTorre; i++) {
+        printf("Direita\n");
+    }
+
+    // ==============================
+    // MOVIMENTO DO BISPO
+    // O Bispo irá se mover 5 casas na diagonal
+    // para cima e à direita.
+    // Estrutura utilizada: while
+    // ==============================
+
+    printf("\nMovimento do Bispo:\n");
+
+    while (contadorBispo <= casasBispo) {
+        printf("Cima Direita\n");
+        contadorBispo++;
+    }
+
+    // ==============================
+    // MOVIMENTO DA RAINHA
+    // A Rainha irá se mover 8 casas para a esquerda.
+    // Estrutura utilizada: do-while
+    // ==============================
+
+    printf("\nMovimento da Rainha:\n");
+
+    do {
+        printf("Esquerda\n");
+        contadorRainha++;
+    } while (contadorRainha <= casasRainha);
+
+    return 0;
+}
